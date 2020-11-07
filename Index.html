@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Ejercicio 15 - Informaci�n sobre eventos</title>
+        <style type="text/css">
+            body {
+                font-family: arial, helvetica;
+            }
+            #info {
+                width: 160px;
+                height: auto;
+                border: thin solid silver;
+                padding: 0.5em;
+            }
+            #info h1 {
+                margin: 0;
+            }
+            #info2 {
+                width: 160px;
+                border: thin solid silver;
+                padding: 0.5em;
+                margin-top: 20px;
+            }
+            #info2 h1 {
+                margin: 0;
+            }
+        </style>
+        <script type="text/javascript">
+            function muestraInformacion(e) {
+            	console.log(e.type)
+                if (e.type=="mousemove") {
+                    var div=document.getElementById("info")
+                    var mensaje = "<h1>Raton</h1>";
+
+                    mensaje+="<p>Navegador ["+e.screenX+","+e.screenY+"]</p>";
+                    mensaje+="<p>Pagina ["+e.clientX+","+e.clientY+"]</p>";
+                    
+                    div.innerHTML=mensaje;
+                    div.style.backgroundColor="white";
+                    var div2=document.getElementById("info2")
+                    div2.style.backgroundColor="white";
+                }
+
+                if (e.type=="keypress") {
+                    var div=document.getElementById("info2")
+                    var mensaje = "<h1>Teclado</h1>";
+
+                    mensaje+="<p>Caracter ["+e.key+"]</p>";
+                    mensaje+="<p>Codigo ["+e.keyCode+"]</p>";
+                    
+                    div.innerHTML=mensaje;
+                    div.style.backgroundColor="#CCE6FF";
+                }
+
+                if(e.type=="click"){
+                    var divR=document.getElementById("info");
+                    divR.style.backgroundColor="#FFFFCC";
+                }
+            }
+        </script>
+    </head>
+    <body onmousemove="muestraInformacion(event)" onkeypress="muestraInformacion(event)" onclick="muestraInformacion(event)">
+        <div id="info">
+            
+        </div>
+
+        <div id="info2">
+            
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /> 
+    </body>
+</html>
